@@ -1,0 +1,43 @@
+<html>
+<head>
+	<style>
+	.button {background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;}
+	body {border:2px solid blue; background-color:lightgrey;text-align:left; font-size:50px; font-family:; color:black;}
+	h6 {color:red;}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Customer details </title>
+</head>
+<body>
+<a href="GoBAck.html" ><button>HOME</button> </a> <br>
+<strong> Fill in the below details to continue...</strong><br>
+If you already have a valid customer id number, you can directly place order. <br>
+<form action="ordersummary.html" method="POST">
+	<label for="custid"> Customer Id: </label>
+	<input type="text" style="font-size:18pt;" id="custid" name="custid" required><br> 
+	<button class="button" type="submit" value="Submit">Submit</button>
+</form>
+<form action="ordersummary.html" method="POST">
+	<label for="custname"> Full name: </label>
+	<input type="text" style="font-size:18pt;" id="custname" name="custname" required><br> 
+	<label for="saddress">Street adress: </label>
+	<input type="text" style="font-size:18pt;" id="sadress" name="sadress" required><br>
+	<label for="aptno">Unit or Apt #:</label>
+	<input type="text" style="font-size:18pt;" id="aptno" name="ap" required><br>
+	<label for="Zipcode">Zipcode: </label>
+	<input type="text" style="font-size:18pt;" id="zipcode" name="zipcode" required><br>
+	<label for="Gender"> Gender: </label>
+	<input type="radio" id="male" name="gender" value="male" checked>
+	<label for="male"> Male </label>
+	<input type="radio" id="female" name="gender" value="female">
+	<label for="male"> Female </label>
+	<input type="radio" id="other" name="gender" value="other">
+	<label for="male"> Other </label><br>
+	<label for="phno"> Phone number: </label>
+	<input type="text" style="font-size:18pt;" id="phno" name="phno" required><br>
+	<button class="button" type="submit" value="Submit">Submit</button>
+	<button class="button" type="reset" value="Reset">Reset</button>
+</form>
+</body>
+</html>
